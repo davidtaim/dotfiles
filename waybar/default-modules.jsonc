@@ -1,0 +1,130 @@
+{
+  "clock": {
+    "format": "󰃰 {:%a %b %d %I:%M %p}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#d8a657'><b>{}</b></span>",
+        "days": "<span color='#d3869b'><b>{}</b></span>",
+        "weeks": "<span color='#89b482'><b>W{}</b></span>",
+        "weekdays": "<span color='#a9b665'><b>{}</b></span>",
+        "today": "<span color='#e78a4e'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  "wireplumber": {
+    "format": " {volume}%",
+    "format-muted": " MUTED",
+    "on-click": "pactl set-sink-mute 0 toggle",
+    "on-click-right": "kitty -e wiremix --tab output",
+    "max-volume": 100,
+    "scroll-step": 1
+  },
+  "wireplumber#source": {
+    "node-type": "Audio/Source",
+    "format": " {volume}%",
+    "format-muted": " MUTED",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "on-click-right": "kitty -e wiremix --tab input",
+    "scroll-step": 1
+  },
+  "hyprland/language": {
+    "format-en": " EN",
+    "format-en-intl": " INTL"
+  },
+  "hyprland/window": {
+    "format": "",
+    "icon": true,
+    "icon-size": 16,
+    "separate-outputs": true
+  },
+  "hyprland/submap": {
+    "format": "{}",
+    "max-length": 8,
+    "tooltip": false
+  },
+  "bluetooth": {
+    "format": "󰂯 {status}",
+    "format-disabled": "󰂲 {status}",
+    "format-connected": "󰂱 {device_alias}",
+    "format-connected-battery": "󰂱 {device_alias} 󰥈 {device_battery_percentage}%",
+    "on-click-right": "kitty -e bluetui",
+    "on-click": "~/.config/waybar/scripts/toggle-bluetooth.sh"
+  },
+  "network": {
+    "interface": "wlp0s20f3",
+    "format": "{ifname}",
+    "format-wifi": " {essid} ({ipaddr})",
+    "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+    "format-disconnected": "Disconnected",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "tooltip-format-wifi": " {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "󰈀 {ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "kitty -e nmtui"
+  },
+  "privacy": {
+    "icon-spacing": 6,
+    "icon-size": 15,
+    "transition-duration": 300,
+    "modules": [
+      {
+        "type": "screenshare",
+        "tooltip": true,
+        "tooltip-icon-size": 18
+      },
+      {
+        "type": "audio-out",
+        "tooltip": true,
+        "tooltip-icon-size": 18
+      },
+      {
+        "type": "audio-in",
+        "tooltip": true,
+        "tooltip-icon-size": 18
+      }
+    ],
+    "ignore": [
+      {
+        "type": "audio-in",
+        "name": "cava"
+      },
+      {
+        "type": "audio-out",
+        "name": "paplay"
+      }
+    ]
+  },
+  "custom/media": {
+    "format": "{icon} {text}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 80,
+    "on-click-middle": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click": "playerctl previous",
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
+  },
+  "custom/updates": {
+    "format": "{}",
+    "interval": 3600,
+    "tooltip": false,
+    "exec": "$HOME/.config/waybar/scripts/updates.sh 2> /dev/null"
+  },
+  "custom/wfrecorder": {
+    "tooltip": false,
+    "exec": "$HOME/.config/waybar/scripts/wf-notification.sh 2> /dev/null",
+    "interval": 1,
+    "format": "{}",
+    "on-click": "pgrep -fa wf-recorder | awk '{print $1}' | xargs kill"
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  }
+}

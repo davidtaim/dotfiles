@@ -1,0 +1,44 @@
+[
+  {
+    "layer": "top",
+    "output": "DP-1",
+    "include": [
+      "~/.config/waybar/default-modules.jsonc"
+    ],
+    "reload_style_on_change": true,
+    "fixed-center": false,
+    "modules-left": [
+      "hyprland/workspaces",
+      "hyprland/window",
+      "hyprland/submap"
+    ],
+    "modules-right": [
+      "tray",
+      "custom/media",
+      "custom/wfrecorder",
+      "privacy",
+      "custom/updates",
+      "network",
+      "bluetooth",
+      "hyprland/language",
+      "wireplumber",
+      "wireplumber#source",
+      "clock"
+    ]
+  },
+  {
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "include": [
+      "~/.config/waybar/default-modules.jsonc"
+    ],
+    "reload_style_on_change": true,
+    "modules-left": [
+      "hyprland/workspaces",
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "clock"
+    ]
+  }
+]

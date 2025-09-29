@@ -1,0 +1,31 @@
+@theme "gruvbox-dark-soft"
+
+configuration {
+    font: "Iosevka Nerd Font Propo Bold 30";
+}
+
+window {
+    children: [message, listview];
+    width: 600px;
+    border: 2px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+textbox {
+    horizontal-align: 0.5;
+}
+
+listview {
+    columns: 1;
+    lines: 4;
+}
+
+element {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}

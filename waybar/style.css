@@ -1,0 +1,133 @@
+* {
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Iosevka Nerd Font Propo";
+  font-weight: bold;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+tooltip {
+  background-color: #32302f;
+  color: white;
+  border-color: #a9b665;
+}
+
+#workspaces {
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #32302f;
+  border-radius: 10px;
+}
+
+#workspaces button {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+#workspaces button.active {
+  background-color: #a9b665;
+  color: #000;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  animation: ws_active 20s ease-in-out 1;
+  transition: all 0.2s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button:hover {
+  background-color: #504945;
+  color: #d4be98;
+  border-radius: 10px;
+  animation: none;
+}
+
+#clock,
+#language,
+#bluetooth,
+#network,
+#custom-updates,
+#privacy,
+#custom-media,
+#custom-wfrecorder,
+#tray {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  color: #000;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#window {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#submap {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  background-color: #ea6962;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#wireplumber {
+  padding-left: 10px;
+  padding-right: 0px;
+  background-color: #e78a4e;
+  color: #000;
+  border-radius: 10px 0px 0px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#wireplumber.source {
+  padding-right: 10px;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 0px;
+}
+
+#clock {
+  background-color: #a9b665;
+  margin-right: 10px;
+}
+
+#language {
+  background-color: #d3869b;
+}
+
+#bluetooth {
+  background-color: #7daea3;
+}
+
+#network {
+  background-color: #89b482;
+}
+
+#custom-updates {
+  background-color: #d8a657;
+}
+
+#privacy {
+  background-color: #e78a4e;
+}
+
+#custom-media {
+  background-color: #7daea3;
+}
+
+#custom-wfrecorder {
+  background-color: #ea6962;
+}
+
+#tray {
+  background-color: #4b3e45;
+}
+

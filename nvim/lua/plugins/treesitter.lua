@@ -1,0 +1,41 @@
+return {
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	main = "nvim-treesitter.configs", -- Sets main module to use for opts
+	-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
+	opts = {
+		ensure_installed = {
+			"bash",
+			"c",
+			"diff",
+			"html",
+			"lua",
+			"luadoc",
+			"markdown",
+			"markdown_inline",
+			"query",
+			"vim",
+			"vimdoc",
+			"css",
+			"regex",
+			"php",
+			"toml",
+			"yaml",
+			"dockerfile",
+			"rasi",
+			"javascript",
+			"norg",
+			"scss",
+			"svelte",
+			"tsx",
+			"typescript",
+			"vue",
+			"java",
+			"json",
+			"jsonc",
+			"ini",
+		},
+		-- Autoinstall languages that are not installed
+		auto_install = true,
+	},
+}

@@ -1,0 +1,1 @@
+option=$(notify-send -a "Screen" "Title" "Body" --action=view="View" --action=edit="Edit");

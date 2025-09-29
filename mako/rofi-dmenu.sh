@@ -1,0 +1,1 @@
+rofi -dmenu -mesg "Choose an option" -theme $HOME/.config/mako/rofi-dmenu.rasi

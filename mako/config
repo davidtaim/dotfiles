@@ -1,0 +1,28 @@
+border-radius=5
+font=Iosevka Nerd Font Bold 15
+margin=20,20
+width=400
+height=200
+output=DP-1
+icon-path=/usr/share/icons/Papirus-Dark
+
+[urgency=low]
+background-color=#32302f
+text-color=#d4be98
+border-color=#7daea3
+
+[urgency=normal]
+background-color=#32302f
+text-color=#d4be98
+border-color=#a9b665
+
+[urgency=critical]
+background-color=#3c1f1e
+text-color=#ddc7a1
+border-color=#ea6962
+
+[app-name="Screenshot tool"]
+on-button-left=exec $HOME/.config/mako/handle-actions.sh "$id"
+
+[app-name="Screenrecorder"]
+on-button-left=exec $HOME/.config/mako/handle-actions.sh "$id"
