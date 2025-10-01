@@ -53,8 +53,7 @@ tooltip {
 #custom-updates,
 #privacy,
 #custom-media,
-#custom-wfrecorder,
-#tray {
+#custom-wfrecorder {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
@@ -128,6 +127,8 @@ tooltip {
 }
 
 #tray {
+  margin-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
   background-color: #4b3e45;
 }
-

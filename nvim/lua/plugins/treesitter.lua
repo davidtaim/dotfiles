@@ -34,6 +34,8 @@ return {
 			"json",
 			"jsonc",
 			"ini",
+			"latex",
+			"typst",
 		},
 		-- Autoinstall languages that are not installed
 		auto_install = true,

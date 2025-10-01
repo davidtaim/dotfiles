@@ -9,6 +9,7 @@ go
 gtk-3.0
 gtk-4.0
 jgit
+Kvantum
 lazydocker
 lazygit
 mozilla
@@ -17,7 +18,10 @@ nwg-look
 obs-studio
 obsidian
 pulse
+qt5ct
+qt6ct
 vesktop
+vlc
 xsettingsd
 mimeapps.list
 QtProject.conf

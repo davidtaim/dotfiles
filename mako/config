@@ -5,6 +5,9 @@ width=400
 height=200
 output=DP-1
 icon-path=/usr/share/icons/Papirus-Dark
+background-color=#32302f
+text-color=#d4be98
+border-color=#a9b665
 
 [urgency=low]
 background-color=#32302f
