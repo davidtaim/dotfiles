@@ -126,5 +126,33 @@
   "tray": {
     "icon-size": 16,
     "spacing": 6
+  },
+  "mpd": {
+    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+    "format-disconnected": " Disconnected",
+    "format-stopped": "󰝤 Stopped",
+    "interval": 10,
+    "consume-icons": {
+      "on": " "
+    },
+    "random-icons": {
+      "off": "",
+      "on": " "
+    },
+    "repeat-icons": {
+      "on": " "
+    },
+    "single-icons": {
+      "on": "1 "
+    },
+    "state-icons": {
+      "paused": "",
+      "playing": ""
+    },
+    "tooltip": false,
+    "on-click": "rmpc prev",
+    "on-click-middle": "rmpc togglepause",
+    "on-click-right": "rmpc next"
   }
 }
+

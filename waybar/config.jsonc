@@ -15,6 +15,7 @@
     "modules-right": [
       "tray",
       "custom/media",
+      "mpd",
       "custom/wfrecorder",
       "privacy",
       "custom/updates",
