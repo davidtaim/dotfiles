@@ -1,4 +1,4 @@
-# DOTFILES
+# Dotfiles and nvim config
 
 ## Some dotfiles
 - bat
