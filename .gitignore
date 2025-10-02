@@ -12,6 +12,7 @@ jgit
 Kvantum
 lazydocker
 lazygit
+mpd/database
 mozilla
 nvim/lazy-lock.json
 nwg-look
@@ -20,6 +21,7 @@ obsidian
 pulse
 qt5ct
 qt6ct
+systemd
 vesktop
 vlc
 xsettingsd
