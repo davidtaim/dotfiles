@@ -1,3 +1,5 @@
+@import url("themes/mocha.css");
+
 * {
   min-height: 0;
   padding: 0;
@@ -11,15 +13,17 @@ window#waybar {
 }
 
 tooltip {
-  background-color: #32302f;
-  color: white;
-  border-color: #a9b665;
+  background-color: @crust;
+  color: @text;
+  border-color: @green;
+  border: 1px solid;
+  padding: 10px;
 }
 
 #workspaces {
   margin-top: 10px;
   margin-left: 10px;
-  background-color: #32302f;
+  background-color: @surface0;
   border-radius: 10px;
 }
 
@@ -30,8 +34,8 @@ tooltip {
 }
 
 #workspaces button.active {
-  background-color: #a9b665;
-  color: #000;
+  background-color: @green;
+  color: @crust;
   border-radius: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -40,8 +44,8 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background-color: #504945;
-  color: #d4be98;
+  background-color: @surface2;
+  color: @text;
   border-radius: 10px;
   animation: none;
 }
@@ -58,7 +62,7 @@ tooltip {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
-  color: #000;
+  color: @crust;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -72,8 +76,8 @@ tooltip {
   margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  color: #000;
-  background-color: #ea6962;
+  color: @crust;
+  background-color: @red;
   margin-left: 10px;
   border-radius: 10px;
 }
@@ -81,8 +85,8 @@ tooltip {
 #wireplumber {
   padding-left: 10px;
   padding-right: 0px;
-  background-color: #e78a4e;
-  color: #000;
+  background-color: @peach;
+  color: @crust;
   border-radius: 10px 0px 0px 10px;
   margin-left: 10px;
   margin-top: 10px;
@@ -95,46 +99,46 @@ tooltip {
 }
 
 #clock {
-  background-color: #a9b665;
+  background-color: @green;
   margin-right: 10px;
 }
 
 #language {
-  background-color: #d3869b;
+  background-color: @maroon;
 }
 
 #bluetooth {
-  background-color: #7daea3;
+  background-color: @blue;
 }
 
 #network {
-  background-color: #89b482;
+  background-color: @teal;
 }
 
 #custom-updates {
-  background-color: #d8a657;
+  background-color: @yellow;
 }
 
 #privacy {
-  background-color: #e78a4e;
+  background-color: @peach;
 }
 
 #custom-media {
-  background-color: #7daea3;
+  background-color: @teal;
 }
 
 #custom-wfrecorder {
-  background-color: #ea6962;
+  background-color: @red;
 }
 
 #mpd {
-  background-color: #a9b665;
+  background-color: @green;
 }
 
 #tray {
   margin-top: 10px;
   padding-right: 5px;
   padding-left: 5px;
-  background-color: #4b3e45;
+  background-color: @surface0;
   border-radius: 10px;
 }

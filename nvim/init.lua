@@ -1,4 +1,4 @@
 require("config.lazy")
 require("core.lsp")
 
-vim.cmd("colorscheme gruvbox-material")
+vim.cmd("colorscheme catppuccin-mocha")

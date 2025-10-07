@@ -1,8 +1,16 @@
-@theme "gruvbox-dark-soft"
+@import "themes/catppuccin-mocha.rasi"
+
+* {
+    background-color: @base;
+    color: @text;
+}
 
 configuration {
     font: "Iosevka Nerd Font Bold 16";
     show-icons: true;
+    drun {
+        display-name: "󱐋 ";
+    }
 }
 
 window {
@@ -10,6 +18,7 @@ window {
     border: 2px;
     border-radius: 10px;
     width: 900px;
+    border-color: @green;
 }
 
 inputbar {
@@ -23,6 +32,16 @@ listview {
 element {
     padding: 5px;
     border-radius: 10px;
+}
+
+element selected normal {
+    background-color: @green;
+    color: @crust;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    color: inherit;
 }
 
 element-icon {
