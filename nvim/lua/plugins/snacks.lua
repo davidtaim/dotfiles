@@ -25,7 +25,7 @@ return {
 				{ section = "startup" },
 				{
 					section = "terminal",
-					cmd = "pokeget 0 --hide-name; sleep .1",
+					cmd = "pokeget 94 --hide-name; sleep .1",
 					random = 10,
 					pane = 2,
 					indent = 4,
