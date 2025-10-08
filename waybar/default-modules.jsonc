@@ -128,7 +128,7 @@
     "spacing": 6
   },
   "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
     "format-disconnected": " Disconnected",
     "format-stopped": "󰝤 Stopped",
     "interval": 10,
@@ -155,4 +155,3 @@
     "on-click-right": "rmpc next"
   }
 }
-
