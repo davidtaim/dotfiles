@@ -1,7 +1,7 @@
 export PATH=/home/kaminari/.cargo/bin:$PATH
 export PATH=/home/kaminari/.config/composer/vendor/bin:$PATH
 
-alias fastfetch='pokeget 0 --hide-name | fastfetch --file-raw -'
+alias fastfetch='pokeget 94 --hide-name | fastfetch --file-raw -'
 
 alias ff=fastfetch
 
