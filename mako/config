@@ -5,24 +5,24 @@ width=400
 height=200
 output=DP-1
 icon-path=/usr/share/icons/Papirus-Dark
-background-color=#32302f
-text-color=#d4be98
-border-color=#a9b665
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#a6e3a1
 
 [urgency=low]
-background-color=#32302f
-text-color=#d4be98
-border-color=#7daea3
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
 
 [urgency=normal]
-background-color=#32302f
-text-color=#d4be98
-border-color=#a9b665
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#a6e3a1
 
 [urgency=critical]
-background-color=#3c1f1e
-text-color=#ddc7a1
-border-color=#ea6962
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#f38ba8
 
 [app-name="Screenshot tool"]
 on-button-left=exec $HOME/.config/mako/handle-actions.sh "$id"
