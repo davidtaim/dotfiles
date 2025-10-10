@@ -86,6 +86,7 @@ alias ..='cd ..'
 alias g='git'
 alias grep='rg'
 alias cat='bat'
+alias pa='php artisan'
 
 # Shell integrations
 eval "$(fzf --zsh)"
