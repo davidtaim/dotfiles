@@ -3,6 +3,7 @@ btop
 cava/shaders
 cava/themes
 Code
+composer
 dconf
 glow
 go
@@ -22,6 +23,7 @@ obsidian
 pulse
 qt5ct
 qt6ct
+sqlitebrowser
 systemd
 vesktop
 vlc
